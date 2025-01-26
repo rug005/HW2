@@ -19,6 +19,7 @@
             </nav>
         </header>
         <hr>
+        <img src = "Images/selfie.avif" alt = "Personal Picture" width="10%" height="50%" />
         <main>
             <section>
                 <h2> About Me </h2>
@@ -45,7 +46,36 @@
             </ol>
         </details>
            <hr> </hr>
-        <footer> Last Updated Jan 24, 2025 </footer>
+           
+            <!-- Form to contact me -->
+           <form action="/action_page.php">
+            <fieldset>
+                <legend> Contact Me </legend>
+                    <label for="fname"> First name:</label>
+                    <input type="text" id="fname" name = "fname"></br><br>
+                    <label for="lname"> Last name:</label>
+                    <input type="text" id="lname" name = "fname"></br><br>
+                    <label for="email"> Email:</label>
+                    <input type="text" id="email" name = "email"></br><br>
+                    <!-- Autocorrects Answer for User -->
+                    <label for="reason">Reason:</label>
+                    <input list="reasons" name="reason" id="reason">
+                    <datalist id="reasons">
+                    <option value="Work">
+                    <option value="Website Issues">
+                    <option value="Other">
+                    </datalist>
+        
+
+                    <p><label for="msgtext">Comments</label></p>
+                    <textarea id="msgtext" name="msgtext" rows=3" cols="50">
+                    </textarea>
+                    <button>Submit</button>
+            </fieldset>
+           </form>
+           
+           <hr></hr>
+        <footer><b> Last Updated Jan 24, 2025 </b></footer>
             
     </body>
 </html>
