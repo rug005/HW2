@@ -12,29 +12,57 @@
             <h1> Ruben's Resume </h1>
             <nav>
                 <strong>
-                <a href="#">About Me</a> |
-                <a href="#">Projects</a> |
-                <a href="mailto:rug005@ucsd.edu"> Email </a>
+                <a href="/courses.html"> Courses </a> |
+                <a href="/interest.html"> Interest </a> |
+                <a href="#">Github</a> |
+                <a href="#">Linkedin</a> |
+                <address> Email: <a href="mailto:rug005@ucsd.edu"> rug005@ucsd.edu </a> </address>
                 </strong>
             </nav>
         </header>
         <hr>
         <img src = "Images/selfie.avif" alt = "Personal Picture" width="10%" height="50%" />
+
+        <!-- Start of main -->
         <main>
             <section>
-                <h2> About Me </h2>
+                <h3> About Me </h3>
                 <link = "https://ucsd.edu/">
-                <p> Currently studying <b>Computer Science </b> <a href = "https://cse.ucsd.edu/"> @UCSD </a> </p>
+                <p>Currently studying <b>Computer Science <a href = "https://cse.ucsd.edu/"> @UCSD </a> </b>
+                I'm expected to finish in <em>March 2025</em>. My plans are to work in <i>Software Engineering</i> or <i>Information Technology.</i>
+                </em></p>
             </section>
         </main>
         <br></br>
-        <h3> Programming Languages </h3>
+
+        <div>
+        <!-- Splits into my personal projects -->
+        <h2>Projects</h2>
+        <p>Worked on building an Animatronics<p>
+        <span>
+            <picture>
+                <source media="(max-width:500px)" srcset="Images/bts-ani.avif">
+                <source media="(max-width:800px)" srcset="Images/arduino.avif">
+                <img src = "Images/pirates.avif" alt = "Working on Animatronics" style="width:50%;">
+            </picture>
+            <video width = "45%" height="100%" controls>
+                <!--<source src = "Videos/Parrot.wmv" type = "video/wmv">-->
+                <source src = "Videos/Parrot2.MP4" type = "video/mp4"> 
+                Your broswer does not support the video tag.
+            </video>
+        </span>
+        <br></br>
+        <!-- Splits into my Programming Languages/Skills-->
+        <h3>Great At</h3>
+        <details>
+            <summary> Programming Languages </summary>
         <ul>
             <li> Java </li>
             <li> C </li>
             <li> Python </li>
             <li> SQL </li>
         </ul>
+        </details>
         
         <details>
             <summary> Skills </summary>
@@ -45,8 +73,17 @@
             <li> Time Management </li>
             </ol>
         </details>
+
+        <details>
+        <dl>
+            <dt>Languages</dt>
+                <dd>English</dd>
+                <dd>Spanish</dd>
+        </dl>
+        </div>
            <hr> </hr>
-           
+
+
             <!-- Form to contact me -->
            <form action="/action_page.php">
             <fieldset>
@@ -57,6 +94,7 @@
                     <input type="text" id="lname" name = "fname"></br><br>
                     <label for="email"> Email:</label>
                     <input type="text" id="email" name = "email"></br><br>
+
                     <!-- Autocorrects Answer for User -->
                     <label for="reason">Reason:</label>
                     <input list="reasons" name="reason" id="reason">
@@ -66,16 +104,17 @@
                     <option value="Other">
                     </datalist>
         
-
+                    <!--  -->
                     <p><label for="msgtext">Comments</label></p>
                     <textarea id="msgtext" name="msgtext" rows=3" cols="50">
                     </textarea>
                     <button>Submit</button>
             </fieldset>
            </form>
+
            
            <hr></hr>
-        <footer><b> Last Updated Jan 24, 2025 </b></footer>
+        <footer><pre> Last Updated Jan 24, 2025 </pre></footer>
             
     </body>
 </html>
