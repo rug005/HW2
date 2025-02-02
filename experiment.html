@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title> Experimental </title>
+    </head>
+
+    <header>
+    <hgroup>
+        <h2>Experimental Page </h2>
+        <p>The purpose of this page is to experiment with different html elements.</p>
+      </hgroup>
+    </header>
+
+    <dialog open>
+        <p>Don't press <kbd>CMD + Shift + W </kbd> </p>
+        <form method="dialog">
+            <audio id="swoosh" src="Music/Swoosh.mp3" type="audio/mp3"></audio>
+            </audio>
+          <button>OK</button>
+        </form>
+      </dialog>
+
+    <p> My favorite caffeinated drink is <del>Cold Brew</del> <ins> Matcha Latte </ins></p>
+    <p>
+        My favorite quote is: <blockquote> “It is better to travel well than to arrive” </blockquote>
+        My favorite book is <cite>The Godfather</cite> Novel by Mario Puzo
+    </p>
+    <button onclick="showContent()">Show hidden content</button>
+
+    <template>
+      <h2>Book</h2>
+      <img src="Images/arduino.avif" width="214" height="204">
+    </template>
+    
+    <script>
+    function showContent() {
+      let temp = document.getElementsByTagName("")[0];
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+    </script>
+    <noscript> Your browser DOESN'T support JavaScript </noscript>
+
+    <dfn> Novels </dfn> a fictitious prose narrative of book length, typically representing character and action with some degree of realism.
+
+    
+    <form "/action_page.php">
+    <label for="coffee"> Choose a drink </label>
+    <select name = "coffee">
+        <option value = "Cold Brew"> Cold Brew </option>
+        <option value = "Latte"> Latte </option>
+        <option value = "Soda"> Soda </option>
+    </select>  
+    <input type = "submit" value = "Submit">
+    </form>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+        Reason you choose this drink
+    </textarea>
+
+    <h1>Movie website</h1>
+    <search>
+        <form action="./search/">
+        <label for="movie">Find a Movie</label>
+         <input type="search" id="movie" name="q" />
+         <button type="submit">Search</button>
+    </form>
+    </search>
+
+   
+
+</html>
