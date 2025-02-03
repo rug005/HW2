@@ -37,10 +37,14 @@
         <br>
 
         <!-- <aside> -->
+        <nav>
+            <ul>
                 <li><a href="/"> Home </a>
                 <li><a href="/projects.html"> Projects </a>
                 <li><a href="/courses.html"> Courses </a>
                 <li><a href="/interest.html"> Interest </a></li>
+            </ul>
+        </nav>
                 <svg width="100" height="100">
                     <circle cx="50" cy="50" r="40" stroke="white" stroke-width="4" fill="blue" />
                 </svg>
@@ -52,15 +56,17 @@
 
         <div>
         <!-- Splits into my personal projects -->
-         <hr></hr>
+         <hr>
         <h2>Projects</h2>
         <p>Worked on building an Animatronics<p>
+
         <span style="border: 1px; color:black">
             <picture>
                 <source media="(max-width:500px)" srcset="Images/bts-ani.avif">
                 <source media="(max-width:800px)" srcset="Images/arduino.avif">
                 <img src = "Images/parrot-bts.JPG" alt = "Working on Animatronics" style="width:50%;">
             </picture>
+        </span>
 
             <figure>
                 <video width = "300" height="250" controls>
@@ -72,7 +78,7 @@
             </figure>
         <!-- </span> -->
         
-        <br><!--</br> -->
+        <br>
 
         <!-- Splits into my Programming Languages/Skills-->
         <h3> Skills </h3>
@@ -118,9 +124,9 @@
                     <input type="text" id="lname" name = "fname"><!--</br>--><br>
                     <label for="email"> Email:</label>
                     <input type="text" id="email" name = "email"><br>
-            </form>
-            <form action="/action_page.php">
-                <label for="main" id="main">
+            
+                
+                <label for="main"> Select a category: </label>
                     <select name="main" id="main">
                         <optgroup label="Main Website">
                             <option value="1"> 1 </option>
@@ -131,8 +137,7 @@
                             <option value="2"> 2 </option>
                         </optgroup>
                     </select>
-                </label>
-            </form>
+                    <br>
 
                     <!-- Autocorrects Answer for User -->
                     <label for="reason">Reason:</label>
@@ -152,8 +157,9 @@
            </form>
 
            
-           <hr></hr>
-        <footer><pre> Last Updated Feb 1<sup>st</sup>, 2025 </pre></footer>
+           <hr>
+        <footer><pre> Last Updated Feb 1<sup>st</sup>, 2025 </pre>
+        </footer>
             
     </body>
 </html>
